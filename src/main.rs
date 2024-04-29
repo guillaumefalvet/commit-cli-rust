@@ -10,7 +10,6 @@ use git::{parse_git_branch, commit};
 fn main() {
     // ANSI Regular
     const OWO: &str = r#"
-
     ██████╗ ██████╗ ███╗   ███╗███╗   ███╗██╗████████╗    ████████╗ ██████╗  ██████╗ ██╗
     ██╔════╝██╔═══██╗████╗ ████║████╗ ████║██║╚══██╔══╝    ╚══██╔══╝██╔═══██╗██╔═══██╗██║
     ██║     ██║   ██║██╔████╔██║██╔████╔██║██║   ██║          ██║   ██║   ██║██║   ██║██║
@@ -18,7 +17,7 @@ fn main() {
     ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║██║   ██║          ██║   ╚██████╔╝╚██████╔╝███████╗
      ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚═╝   ╚═╝          ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝
 "#;
-println!("\n\n\n\n\n{}", OWO.fg_rgb::<0x2E, 0x31, 0x92>().bold());
+println!("{}", OWO.fg_rgb::<0x2E, 0x31, 0x92>().bold());
     // Parse command-line arguments using clap
     let matches = Command::new("commit-helper by Guillaume Falvet")
         .version("1.0.0")
